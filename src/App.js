@@ -1,9 +1,20 @@
 import React from 'react';
 
+import { BrowserRouter} from "react-router-dom";
+
+import Routes from './Routes';
+
+import Header from './components/Header'
+import Footer from './components/Footer'
+
 function App() {
   return (
     <div>
-      <h1>APP</h1>
+    <BrowserRouter>
+      <Header />
+       <Routes />
+       <Footer />
+   </BrowserRouter>
     </div>
   );
 }
